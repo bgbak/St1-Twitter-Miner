@@ -15,6 +15,7 @@ def parse_tweet(text):
     time = split[5]
     return time, station, gasoline, diesel
 
+
 def get_all_tweets(screen_name):
     """Download all tweets for specified screen name"""
 
@@ -58,8 +59,8 @@ def get_all_tweets(screen_name):
         outtweets.append(parse_tweet(tweet.text))
 
     # write the csv
-    with open('%s_tweets.csv' % screen_name, 'w') as f:
-        writer = csv.writer(f)
+    with open('%s_tweets.csv' % screen_name, 'w'):
+        writer = csv.writer()
         writer.writerow(["created_at", "tid", "stasjon", "bensin", "diesel"])
         writer.writerows(outtweets)
 
