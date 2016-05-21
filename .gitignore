@@ -243,3 +243,6 @@ apikeys.py
 
 # Ignore Python Cache
 .pyc
+
+# Ignore output files
+*.csv
