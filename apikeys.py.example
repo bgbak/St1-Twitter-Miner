@@ -1,4 +1,4 @@
-consumer_key = "wdb53Sn0iw4BQaqWo662IFjrK"
-consumer_secret = "MAnAA5hb3Hkfqu03S7xDfhtkdmHReq9wpzQyB8eprP8hCkCYbp"
-access_token = "59851292-io3fVqAib0vEsJME1FNhN8BuyOY6nS60MJSACRqC6"
-access_secret = "YDjrw0fmGgXNgFEmV93nffIZ6w8PMa6NCazEreDg1Hqx3"
+consumer_key = "your consumer key"
+consumer_secret = "your consumer secret"
+access_token = "your access toke "
+access_secret = "your access secret"
