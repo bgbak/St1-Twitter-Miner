@@ -234,3 +234,6 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+
+# Ignore apikeys-file, so it doesn't go to the cloud with our keys
+apikeys.py
