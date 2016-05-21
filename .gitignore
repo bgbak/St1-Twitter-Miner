@@ -241,8 +241,7 @@ apikeys.py
 # Ignore VS Code
 .vscode
 
-# Ignore Python Cache
-.pyc
-
 # Ignore output files
 *.csv
+*.pyc
+
