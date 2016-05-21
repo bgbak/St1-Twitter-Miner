@@ -59,10 +59,10 @@ def get_all_tweets(screen_name):
         outtweets.append(parse_tweet(tweet.text))
 
     # write the csv
-    with open('%s_tweets.csv' % screen_name, 'w'):
-        writer = csv.writer()
-        writer.writerow(["created_at", "tid", "stasjon", "bensin", "diesel"])
-        writer.writerows(outtweets)
+    open(csvfile, 'w') as f:
+    writer = csv.writer(f)
+    writer.writerow(["created_at", "tid", "stasjon", "bensin", "diesel"])
+    writer.writerows(outtweets)
 
 if __name__ == '__main__':
     # pass in the username of the account you want to download
