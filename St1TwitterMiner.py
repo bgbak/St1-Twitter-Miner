@@ -5,6 +5,11 @@ import tweepy
 
 from apikeys import consumer_key, consumer_secret, access_token, access_secret
 
+# Your constants
+twitter_user = 'St1Norge'
+csvfile = 'tweets.csv'
+
+
 # Split and extract information from the tweet, and return in a usefull format
 def parse_tweet(text):
     """ Split the tweet into something usable. """
@@ -59,11 +64,11 @@ def get_all_tweets(screen_name):
         outtweets.append(parse_tweet(tweet.text))
 
     # write the csv
-    open(csvfile, 'w') as f:
-    writer = csv.writer(f)
-    writer.writerow(["created_at", "tid", "stasjon", "bensin", "diesel"])
-    writer.writerows(outtweets)
+    with open(csvfile, 'w') as f:
+        writer = csv.writer(f)
+        writer.writerow(["created_at", "tid", "stasjon", "bensin", "diesel"])
+        writer.writerows(outtweets)
 
 if __name__ == '__main__':
     # pass in the username of the account you want to download
-    get_all_tweets("St1Norge")
+    get_all_tweets(twitter_user)
