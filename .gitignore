@@ -237,3 +237,9 @@ _Pvt_Extensions
 
 # Ignore apikeys-file, so it doesn't go to the cloud with our keys
 apikeys.py
+
+# Ignore VS Code
+.vscode
+
+# Ignore Python Cache
+.pyc
